@@ -1,0 +1,48 @@
+
+
+.card-animation{
+  animation-name: upto;
+  animation-duration: 1s;
+}
+
+.title-animation{
+  animation-name: card-title;
+  animation-duration: 2s;
+}
+
+.content-animation{
+  animation-name: content-space;
+  animation-duration: 2s;
+}
+
+@keyframes upto{
+  from{
+    opacity: 0;
+    transform: translateY(-25%) scaleY(0.9);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0%) scaleY(1);
+  }
+}
+
+@keyframes card-title{
+  from{
+    opacity: 0;
+    transform: translateX(15%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes content-space{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
